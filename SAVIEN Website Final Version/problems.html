@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    #logo {
+    float:left;
+    margin-top:5px;
+    }
+}
+
+.logo img {
+    height : 30%;
+    width : 30%;
+}
+#menu {
+    float:left;
+}
+#header {
+    clear: both;
+    overflow: auto;
+}
+    .responsive {
+      width: 100%;
+      max-width: 800px;
+      max-height: 800px;
+      margin-left: auto;
+      margin-right:auto;
+      display: block
+      ;
+    }
+
+    .highlightme {
+      background-color: #4CAF50;
+    }
+
+    .navbar {
+      overflow: auto;
+      background-color: #333;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    .navbar a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .navbar a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .navbar a.active {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    .navbar .icon {
+      display: none;
+    }
+
+    @media screen and (max-width: 600px) {
+      .navbar a:not(:first-child) {
+        display: none;
+      }
+
+      .navbar a.icon {
+        float: right;
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 600px) {
+      .navbar.responsive .icon {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+      }
+
+      .navbar.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+      }
+
+    }
+
+
+
+
+    .button {
+      background-color: #000000;
+      border: none;
+      color: white;
+      padding: 16px 32px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      margin: 4px 2px;
+      -webkit-transition-duration: 0.4s;
+      /* Safari */
+      transition-duration: 0.4s;
+      cursor: pointer;
+    }
+
+    .button1:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    body {
+      background-image: url('trashland.jpg');
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+      background-color: #FFFFFF;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Verdana, sans-serif;
+    }
+
+    .mySlides {
+      display: none;
+    }
+
+    img {
+      vertical-align: middle;
+    }
+
+    /* Slideshow container */
+    .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+
+    /* Caption text */
+    .text {
+      color: #f2f2f2;
+      font-size: 15px;
+      padding: 8px 12px;
+      position: absolute;
+      bottom: 8px;
+      width: 100%;
+      text-align: center;
+    }
+
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+
+    /* The dots/bullets/indicators */
+    .dot {
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+
+    .active {
+      background-color: #717171;
+    }
+
+    /* Fading animation */
+    .fade {
+      -webkit-animation-name: fade;
+      -webkit-animation-duration: 1.5s;
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+
+    @-webkit-keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    @keyframes fade {
+      from {
+        opacity: .4
+      }
+
+      to {
+        opacity: 1
+      }
+    }
+
+    /* On smaller screens, decrease text size */
+    @media only screen and (max-width: 300px) {
+      .text {
+        font-size: 11px
+      }
+    }
+
+
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: transparency;
+    }
+
+    li {
+      float: left;
+    }
+
+    li a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+
+    li a:hover:not(.active) {
+      background-color: #C5CB03;
+    }
+
+    footer {
+  color: #666;
+  background: #222;
+  position: fixed;
+  bottom: 0px;
+  padding: 1px 0 18px 0;
+  border-top: 1px solid #000;
+  text-align: center;
+  width: 100%;
+  bottom: 0px;
+}
+footer a {
+  color: #999;
+}
+footer a:hover {
+  color: #efefef;
+}
+
+/* responsive footer fix by Aalaap Ghag
+This is where the magic happens */
+@media (max-width: 1000px) {
+
+  footer  {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+.container {
+  max-width: 1500px;
+}
+
+
+
+
+
+
+  </style>
+  <title>ISOM-424 MOBILE APPLICATION DEVELOPMENT - STUDENT21 CSS Page SITE</title>
+  <meta charset="utf-8">
+  <link href="myCSS.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div id="header">
+        <nav>
+
+          <ul  id="menu">
+
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About US</a></li>
+            <li><a href="problems.html">Problems</a></li>
+            <li><a href="GoogleMaps.html">Data Map</a></li>
+            <li><a href="projects.html">Projects</a></li>
+
+            <li><a href="contacts.html">Contacts</a></li>
+            <li><a href="donation.html">Donation</a></li>
+          </ul>
+        </nav>
+      </div>
+  <main>
+  <div>
+
+    <h1 style="position:relative; top:25px; color: #FFFFFF ; font-size: 60px ;" class=" large thick"> <b> Vietnam's
+        Environmental Issues</b> </h1>
+    <h2 style="color: #FFFFFF; font-size:40px"; class="highlightme"> Water Pollution </h2>
+    <div><img src="waterproblem.jpeg" alt="waterproblem" class="responsive"></div>
+    <div style="border:10px solid green; background-color: black; width: o auto; padding: 0 auto; margin: 0 auto">
+      <p style="color: #FFFFFF"> Water pollution situation in the big city is very clearly,
+        especially in Hanoi and Ho Chi Minh City. In those areas, the quantity of waste water from daily activities is
+        directly let out canal, river or irrigation canal. There are many hospitals and chemical site have not got waste
+        water treatment.
+
+      </p>
+
+      <p style="color: #FFFFFF"> In Hanoi, total of sewage is 300,000 to 400,000 m3 /day. Recently,
+        5/31 chemical facilities have water proposal, amounting to 25% waste water from hospital. About 36/400
+        manufacture sites have water treatment. The volume of rubbish have not collected is 1,200 m3/day and they are
+        let out the area around the lake, canal in the urban. The BOD index, NH4, NO2, NO3 in water in the city is
+        beyond too much as the acceptation.
+
+      </p>
+      <p style="color: #FFFFFF"> Not only in Hanoi or Ho Chi Minh City get water pollution, but also
+        in some metropolitan such as Hai Phong, Da Nang, Hue, Nam Dinh, Hai Duong, many index in water is 5 or even 20
+        times as much as permission standard.
+
+        In suburban area, where the living standard is still backward, all the rubbish are not treated and infiltrated
+        into soil that makes the environment pollution more and more serious.
+
+      </p>
+
+    </div>
+
+    <h2 style="color: #FFFFFF; font-size:40px"; class="highlightme"> Air Pollution </h2>
+    <div><img src="airpollute.jpg" alt="airp" class="responsive"></div>
+    <div style="border:10px solid green; background-color: black; width: 0 auto; padding: 0 auto; margin: 0 auto">
+      <p style="color: #FFFFFF"> With the rapid urbanization in South East Asia, most countries in
+        this region were affected by air pollution which includes Vietnam. Vietnam, home to 95 million people and a
+        rapidly developing country is currently facing serious issue of air pollution.
+
+      </p>
+
+      <p style="color: #FFFFFF"> According to the local news in Vietnam, both Hanoi and Ho Chi Minh
+        City had more than 200 days in 2017 of air quality that was polluted beyond the health standards set by World
+        Health Organization (WHO) specifically on PM10 and PM2.5. PM2.5 includes pollutants, such as sulfate, nitrates
+        and black carbon. Combination of air pollutant and UV ray will pose greater damages especially on the skin.
+
+      </p>
+      <p style="color: #FFFFFF"> The Air Quality Index (AQI) may have shown acceptable readings in
+        Hanoi and Ho Chi Minh City. However, the concentration of PM10 and PM2.5 are not at the safe level and affects
+        the health of the population. Based on the 2016 database of WHO, the readings were 102.3 μg/m3 for PM10 and 47.9
+        μg/m3 for PM2.5 in Hanoi, and 89.8 μg/m3 for PM10 and 42 μg/m3 for PM2.5 in Ho Chi Minh City compared to the WHO
+        recommended annual mean value of 20 μg/m3 for PM10 and 10 μg/m3 for PM2.5.
+
+      </p>
+
+      <p style="color: #FFFFFF"> These fine particles may lead to heart disease, stroke, chronic
+        obstructive pulmonary disease, lung cancer and pneumonia. According to WHO, there were more than 60,000 deaths
+        in Vietnam for year 2016 related to these diseases which were linked to air pollution.
+
+      </p>
+    </div>
+  </main>
+
+
+</body>
+<footer>
+    <div class="container">
+      <p>© 2020 SAVIEN Organization. All Rights Reserved
+    </div>
+  </footer>
+
+</html>

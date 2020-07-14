@@ -1,0 +1,66 @@
+h1
+    {
+	text-align: center;
+        Color:Black;
+    }
+h2
+    {
+	text-align: center;
+        Color:black;
+    }
+h2.large
+    {
+	font-size:200%
+    }
+
+h2.thick 
+    {
+  font-weight: bold;
+    }
+
+p
+    {
+	text-align: center;
+        font-size:18px;
+		color: black
+    }
+
+#logo {
+  display: inline-flex;
+}
+
+#navItems
+{ 
+  display:inline-flex;
+  
+img {
+  width: 100%;
+  height: auto; 
+}
+
+.fit-picture {
+width: 100%;
+  height: auto; 
+}
+
+table, th, td {
+  border: 1px solid black;
+  padding: 5px;
+}
+table {
+  border-spacing: 15px;
+}
+
+body {
+    background-image: url("saviencover.png")
+    background-color: green;
+    color: azure;
+    font-size: 1.1em;
+}
+
+* {
+  
+  font-family: Open sans-serif;
+ }
+
+ 
